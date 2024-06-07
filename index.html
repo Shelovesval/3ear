@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ear's Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/564x/2b/61/e1/2b61e1f652ed043cd581a1a69f2e7b78.jpg" alt="3ear's Arcade Logo">
+            <h1>3ear's Arcade</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Selling Cheap games at an affordable price</h2>
+            <p>Discover the games you yearn for at prices you'll love.</p>
+            <a href="https://www.instagram.com/3ear.co/" class="cta-button" target="_blank">Get started</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to 3ear’s Arcade, your ultimate destination for cheap and affordable gaming! At Game Haven, we believe that everyone deserves to experience the joy and excitement of gaming without breaking the bank. Our mission is to provide a wide selection of high-quality games at prices that won’t hurt your wallet, making it easy for everyone to enjoy their favorite pastimes.</p>
+        <p>Currently we are under construction and will be releasing to the world real soon so hang tight!</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="https://i.pinimg.com/564x/7a/cf/72/7acf7205b2cafa44598a5d0316cb3f02.jpg" alt="Service 1">
+                <h3>Affordable Prices</h3>
+                <p>We work hard to keep our prices low without compromising on quality. Our goal is to make gaming affordable for everyone, from casual players to hardcore enthusiasts.</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/564x/46/f3/fd/46f3fdb5f464dd8f1ac72f908f764ded.jpg" alt="Service 2">
+                <h3>Diverse Selection</h3>
+                <p>Whether you’re into action-packed shooters, immersive RPGs, strategic simulations, or family-friendly titles, we have something for every type of gamer. Our ever-expanding catalog includes games for all major platforms, including PC, PlayStation, Xbox, and Nintendo.</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/564x/81/85/25/818525eae1a735b5fccd011a946c3917.jpg" alt="Service 3">
+                <h3>Great Deals</h3>
+                <p>Be sure to check out our special offers and discounts, which are updated regularly. You’ll find amazing deals that make it even easier to build your gaming collection.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 3ear's Arcade. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('nav ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+

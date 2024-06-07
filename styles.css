@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.hero {
+    background: url('https://i.pinimg.com/originals/02/01/1e/02011ec8554277b8c70bf22fb192123c.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #555;
+}
+
+section {
+    padding: 50px 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    margin: 15px 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#blog, #contact {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#blog ul {
+    list-style: none;
+    padding: 0;
+}
+
+#blog li {
+    margin-bottom: 20px;
+}
+
+#blog h3 {
+    margin: 0 0 10px;
+}
+
+#blog a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#contact form div {
+    margin-bottom: 15px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #555;
+}
+.cta-button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 25px; /* Adjust the radius for the curved effect */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
